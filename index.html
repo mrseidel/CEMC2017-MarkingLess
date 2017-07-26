@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="author" content="Andrew Seidel">
+
+		<title>Integrating the Genius Hour into the ICS4U Curriculum</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<!-- This is the section to create the slides -->
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Genius Hour For <strong>ICS4U</strong></h1>
+
+					<pre><code class="hljs" data-trim contenteditable>
+					void setup() {
+  location = "CEMC 2016 - Summer Conference";
+  presenter = "Andrew Seidel";
+}
+				</code></pre>
+				<p>Repo for this presentation available <a href="https://github.com/mrseidel/CEMC2016-GeniusHour">here</a></p>
+				</section>
+				<section>
+					<section> <!-- main question section -->
+					  <h2>Important Questions</h2>
+					  <p><span class="fragment">What is genius hour?</span></p>
+					  <p><span class="fragment">Why implement it in class?</span></p>
+					  <p><span class="fragment">Why the ICS4U course?</span></p>
+				  </section>
+					<section> <!-- what is genius hour? -->
+						<h2>What is Genius Hour?</h2>
+						<p>Genius hour (aka 20% time), is meant to allow students a break
+							from the regular curriculum in order for the student to learn
+							whatever <em>they</em> want to learn about.  It does <em>not</em>
+							have to be related to the curriculum in any way.
+						</p>
+						<p><a href="https://www.youtube.com/watch?v=xupHuEk8p7g">Short 4 minute video</a>
+					</section>
+					<section> <!-- why implement it in class? -->
+						<h2>Why implement it in the classroom?</h2>
+						<ul>
+							<li><span class="fragment">Autonomy</span></li>
+							<li><span class="fragment">Mastery</span></li>
+							<li><span class="fragment">Purpose</span></li>
+						</ul>
+					</section>
+					<section> <!-- why ICS4U? -->
+						<h2>ICS4U Curriculum</h2>
+						<p>In the ICS4U curriculum there is a lot of leniency towards using
+						genius hour while still hitting curriculum expectations.</p>
+						<p>Let's delve deeper into this section</p>
+					</section>
+			  </section>
+				<section>
+					<h2>ICS4U Curriculum</h2>
+					Big Ideas:
+					<ul>
+						<span class="fragment"><li>B1: Manage software development process through: planning, development, production, and closing</li></span>
+						<span class="fragment"><li>B2: Apply standard project management techniques in the context of a student-managed team project</li></span>
+					</ul>
+				</section>
+				<section>
+					<h2>ICS4U Curriculum</h2>
+					Section B:
+					<ul>
+						<span class="fragment"><li>B1.1: Create software plan</li></span>
+						<span class="fragment"><li>B1.2: Develop software product related to plan </li></span>
+						<span class="fragment"><li>B1.3: Produce software according to specs </li></span>
+						<span class="fragment"><li>B1.4: Use appropriate project management tools </li></span>
+						<span class="fragment"><li>B1.5: Close the project out </li></span>
+						<span class="fragment"><li>B1.6: Review management of project </li></span>
+						<span class="fragment"><li>B1.7: Use source code management tools </li></span>
+						<span class="fragment"><li>B2.1: Contribute as a team member to the project</li></span>
+						<span class="fragment"><li>B2.2: Meet project goals, timelines, etc. </li></span>
+						<span class="fragment"><li>B2.3: Reflect on team and individual goals </li></span>
+					</ul>
+				</section>
+				<section>
+
+					<h2>The project</h2>
+					Allows:
+
+					<ul>
+						<span class="fragment"><li>the students to demonstrate section B of the curriculum </li></span>
+						<span class="fragment"><li>the students to choose their own projects</li></span>
+						<span class="fragment"><li>teachers to assess and evaluate a good chunk of the curriculum</span><span class="fragment"> <span style="font-size:0.4em"><em>Is this necessary?</em></span></li>
+						  </span> <!-- This ends the fragmented portion of the italics section -->
+					</ul>
+
+				</section>
+				<section>
+					<h2> <a href="https://github.com/mrseidel-classes/ICS4U-S2015-2016/tree/master/Assignments/13%20-%20Long%20Term%20Group">The project...</a> </h2>
+					and
+					<h2> <a href="https://github.com/mrseidel/CEMC2016-GeniusHour/tree/master/Examples">Examples...</a> </h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
